@@ -20,11 +20,11 @@ In this project you'll take take an existing e-commerce store and refactor the a
 - [X] Add your team lead as collaborator on Github.
 - [X] Clone your OWN version of the repository in your terminal
 - [X] CD into the project base directory `cd react-shopping-cart`
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [X] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -41,9 +41,11 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - If you look in the `App.js` you'll notice there are currently two state properties - `products` to keep track of all available products, and `cart` that will keep track of all the items in our `cart`.
 
-- You'll also notice inside of our `App.js` we have 3 components. A navigation component and two route based components. Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
+- You'll also notice inside of our `App.js` we have 3 components.
+ - A navigation component and two route based components.
+  Each of those components are all being passed either our `cart` state or `product` state as props, when we start to scale our application and add more props our codebase is going to start to become very cumbersome and will make our application hard to work with.
 
-- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
+- To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more efficient to access data across our application.
 
 **STEP 1 - Creating ProductContext**
 
@@ -131,13 +133,13 @@ const { products, addItem } = useContext(ProductContext);
 
 **STEP 6 - The final stretch**
 
-- Our cart data is now being provided to us from our `CartContext` time to consume it!
+- [X] Our cart data is now being provided to us from our `CartContext` time to consume it!
 
-- First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
+- [X] First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
 
-- Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
+- [X] Now in the component, pass `CartContext` to the `useContext` hook and assign it to a variable named cart.
 
-- Inside of our component we now need to remove all instances of props.
+- [X] Inside of our component we now need to remove all instances of props.
 
   - Remove the `props` parameter
   - Remove the `props` portion in our `getCartTotal` function
@@ -154,7 +156,7 @@ We have now successfully converted our application into using `Context API` 🔥
 
 ## _MVP Requirements:_
 
-- Create a `ProductContext` and a `CartContext`
+- [X] Create a `ProductContext` and a `CartContext`
 - Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
 - Consume data using the `useContext` hook from `ProductContext` and `CartContext`
 
